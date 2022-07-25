@@ -18,20 +18,21 @@ const Products = () => {
                 <Link to='/pizza'>Hot Pizza</Link>
             </li>
         </ul>
-        <div className='flex items-center justify-center'>
-            <div>
+        <div className='flex items-center justify-center mx-auto'>
+            <div className='mx-auto text-center'>
+              <img className='object-fit' src={burger} alt="burger" />
+              <span className='text-center font-bold'>Pepperoni</span>
+              <small className='block text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, saepe.</small>
+            </div>
+            <div className='mx-auto text-center'>
               <img className='object-fit' src={burger} alt="burger" />
               <span className='text-center'>Pepperoni</span>
             </div>
-            <div>
+            <div className='mx-auto text-center'>
               <img className='object-fit' src={burger} alt="burger" />
               <span className='text-center'>Pepperoni</span>
             </div>
-            <div>
-              <img className='object-fit' src={burger} alt="burger" />
-              <span className='text-center'>Pepperoni</span>
-            </div>
-            <div>
+            <div className='mx-auto text-center'>
               <img className='object-fit' src={burger} alt="burger" />
               <span className='text-center'>Pepperoni</span>
             </div>
