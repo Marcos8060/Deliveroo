@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { MdShoppingBasket } from 'react-icons/md'
+import { HiUserCircle } from 'react-icons/hi'
 
 const Navigation = () => {
   return (
@@ -8,10 +9,14 @@ const Navigation = () => {
           <h1 className='font-bold text-4xl'>Burger</h1>
         </div>
         <ul className='md:flex items-center justify-between'>
-            <li className='m-4'>Home</li>
-            <li className='m-4'>About</li>
-            <li className='m-4'>Deliveries</li>
+            <li className='m-4 font-semibold'>Home</li>
+            <li className='m-4 font-semibold'>About</li>
+            <li className='m-4 font-semibold'>Deliveries</li>
         </ul>
+        <div className='flex items-center justify-between'>
+            <MdShoppingBasket className='text-2xl m-4'/>
+            <HiUserCircle className='text-2xl m-4'/>
+        </div>
     </div>
   )
 }
