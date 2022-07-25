@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import burger from '../assets/Images/burger3.png'
 
 const Products = () => {
   return (
@@ -17,6 +18,24 @@ const Products = () => {
                 <Link to='/pizza'>Hot Pizza</Link>
             </li>
         </ul>
+        <div className='flex items-center justify-center'>
+            <div>
+              <img className='object-fit' src={burger} alt="burger" />
+              <span className='text-center'>Pepperoni</span>
+            </div>
+            <div>
+              <img className='object-fit' src={burger} alt="burger" />
+              <span className='text-center'>Pepperoni</span>
+            </div>
+            <div>
+              <img className='object-fit' src={burger} alt="burger" />
+              <span className='text-center'>Pepperoni</span>
+            </div>
+            <div>
+              <img className='object-fit' src={burger} alt="burger" />
+              <span className='text-center'>Pepperoni</span>
+            </div>
+        </div>
     </div>
   )
 }
