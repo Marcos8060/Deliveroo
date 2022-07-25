@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div className='home--background h-screen p-4 mx-auto'>
         <Navigation />
-        <div className='container mx-auto px-4 md:flex sm:grid'>
+        <div className='px-4 flex'>
             <img className='object-cover w-8/12 sm:w-12/12' src={burger} alt="burger" />
-            <h1 className='text-white lg:text-8xl font-bold my-40 sm:hidden'>Delicious Burgers.</h1>
+            <h1 className='text-white text-8xl font-bold my-40'>Delicious Burgers.</h1>
         </div>
     </div>
   )
