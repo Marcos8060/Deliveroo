@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 const Navigation = () => {
   return (
-    <div className='bg-white h-14 w-11/12 mx-auto rounded-2xl px-4 md:flex justify-between items-center'>
+    <div className='text-yellow h-14 w-11/12 mx-auto rounded-2xl px-4 md:flex justify-between items-center'>
         <div>
-          <h1 className='font-bold text-4xl'>Gomoto</h1>
+          <h1 className='font-bold text-4xl'>Burger</h1>
         </div>
         <ul className='md:flex items-center justify-between'>
             <li className='m-4 font-semibold'>
