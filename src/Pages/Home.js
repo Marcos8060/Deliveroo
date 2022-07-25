@@ -8,7 +8,7 @@ const Home = () => {
         <Navigation />
         <div className='px-4 flex'>
             <img className='object-cover w-8/12 sm:w-12/12' src={burger} alt="burger" />
-            <h1 className='text-white text-8xl font-bold my-40'>Delicious Burgers.</h1>
+            <h1 className='text-white text-8xl font-bold my-40'>Delicious <span className='text-yellow'>Burgers.</span></h1>
         </div>
     </div>
   )

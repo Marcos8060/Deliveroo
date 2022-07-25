@@ -9,6 +9,10 @@ module.exports = {
       padding: '2rem',
     },
     extend: {},
+    colors: {
+      yellow: "#F7B614",
+      white: "#fff",
+    },
   },
   plugins: [],
   screens:{
