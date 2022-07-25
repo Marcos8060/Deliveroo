@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdShoppingBasket } from 'react-icons/md'
+import { GiShoppingBag } from 'react-icons/gi'
 import { HiUserCircle } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const Navigation = () => {
             </li>
         </ul>
         <div className='flex items-center justify-between'>
-            <MdShoppingBasket className='text-2xl m-4'/>
+            <GiShoppingBag className='text-2xl m-4'/>
             <HiUserCircle className='text-2xl m-4'/>
         </div>
     </div>
