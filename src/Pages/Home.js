@@ -4,6 +4,8 @@ import burger from '../assets/Images/burger2.png'
 import Delivery from '../components/Delivery'
 import Products from '../components/Products'
 import Cto from '../components/Cto'
+import Soon from '../components/Soon'
+import Testimonial from '../components/Testimonial'
 
 
 const Home = () => {
@@ -14,9 +16,17 @@ const Home = () => {
             <img className='object-cover w-8/12 sm:w-12/12' src={burger} alt="burger" />
             <h1 className='text-white text-8xl font-bold my-40'>Delicious <span className='text-yellow'>Burgers.</span></h1>
         </div>
+
         <Delivery />
+
         <Products />
+
         <Cto />
+
+        <Soon />
+
+        <Testimonial />
+        
     </div>
   )
 }
