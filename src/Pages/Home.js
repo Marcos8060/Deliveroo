@@ -6,6 +6,7 @@ import Products from '../components/Products'
 import Cto from '../components/Cto'
 import Soon from '../components/Soon'
 import Testimonial from '../components/Testimonial'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -26,7 +27,8 @@ const Home = () => {
         <Soon />
 
         <Testimonial />
-        
+
+        <Footer />
     </div>
   )
 }
