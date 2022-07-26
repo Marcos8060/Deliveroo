@@ -15,10 +15,10 @@ const Products = () => {
     loop: true,
     margin:10,
     nav:true,
+    center: true,
     responsive:{
         0:{
             items:1,
-            center: true,
         },
         600:{
             items:3
@@ -39,41 +39,54 @@ const Products = () => {
         <h1 className='text-center text-black font-bold text-6xl mb-20'>Popular Goods</h1>
         
         <OwlCarousel {...options}>
-           <div className='transition'>
+
+           <div className='cursor-pointer'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <span className='text-center font-bold text-2xl'>Pepperoni</span>
-              <div className='flex items-center justify-around'>
-                <p className="text-yellow font-bold text-2xl underline">$40</p>
-                <GiShoppingBag className='text-center text-yellow text-2xl'/>
+              <div className='flex items-center justify-center flex-col'>
+                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <div className='flex items-center justify-between'>
+                  <p className="text-yellow font-bold text-2xl underline mr-4">$40</p>
+                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
+                </div>
               </div>
             </div>
 
-            <div className=''>
+
+            <div className='cursor-pointer'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <span className='text-center font-bold text-2xl'>Pepperoni</span>
-              <div className="flex items-center justify-around">
-                <p className="text-yellow font-bold text-2xl underline">$30</p>
-                <GiShoppingBag className='text-yellow text-2xl'/>
+              <div className='flex items-center justify-center flex-col'>
+                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <div className='flex items-center justify-between'>
+                  <p className="text-yellow font-bold text-2xl underline mr-4">$40</p>
+                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
+                </div>
               </div>
             </div>
 
-            <div className=''>
+
+            <div className='cursor-pointer'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <span className='text-center font-bold text-2xl'>Pepperoni</span>
-              <div className="flex items-center justify-around">
-                <p className="text-yellow font-bold text-2xl underline">$30</p>
-                <GiShoppingBag className='text-yellow text-2xl'/>
+              <div className='flex items-center justify-center flex-col'>
+                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <div className='flex items-center justify-between'>
+                  <p className="text-yellow font-bold text-2xl underline mr-4">$40</p>
+                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
+                </div>
               </div>
             </div>
 
-            <div className=''>
+
+            <div className='cursor-pointer'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <span className='text-center font-bold text-2xl'>Pepperoni</span>
-              <div className="flex items-center justify-around">
-                <p className="text-yellow font-bold text-2xl underline">$30</p>
-                <GiShoppingBag className='text-yellow text-2xl'/>
+              <div className='flex items-center justify-center flex-col'>
+                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <div className='flex items-center justify-between'>
+                  <p className="text-yellow font-bold text-2xl underline mr-4">$40</p>
+                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
+                </div>
               </div>
             </div>
+
 
         </OwlCarousel>
     </div>
