@@ -11,15 +11,16 @@ const Testimonial = () => {
         loop: true,
         margin:10,
         nav:true,
+        center: true,
         responsive:{
             0:{
                 items:1,
             },
             600:{
-                items:1
+                items:3
             },
             1000:{
-                items:1
+                items:3
             }
         },
         navText:[
@@ -35,22 +36,35 @@ const Testimonial = () => {
         <ImQuotesLeft  className='mx-auto text-4xl text-yellow font-bold mt-14 mb-20'/>
 
         <OwlCarousel {...options}>
-            <div className='w-8/12 mx-auto'>
-                <p className='text-center text-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                {/* <img className='' src="https://media.istockphoto.com/photos/pensive-mature-man-looking-at-the-camera-on-gray-background-picture-id1334905996?k=20&m=1334905996&s=612x612&w=0&h=yzzgyBbSI7q4UdB3GkyNFoGyBb7Kw1Sm7cu5NaT0d1o=" alt="" /> */}
+
+            <div className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+                <ImQuotesLeft/>
+                <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
+                <ImQuotesLeft className='ml-auto'/>
+                <small className='text-2sm font-thin text-yellow'>Jared Oyugi.</small>
             </div>
-            <div  className='w-8/12 mx-auto'>
-                <p className='text-center text-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                {/* <img src="https://media.istockphoto.com/photos/pensive-hispanic-man-looking-at-the-camera-picture-id1263465473?k=20&m=1263465473&s=612x612&w=0&h=iGEkZHDCFpx_StN8LwH9c-yjhLvhwEvw0VxCTHKl_HE=" alt="" /> */}
+
+            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+                <ImQuotesLeft/>
+                <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
+                <ImQuotesLeft className='ml-auto'/>
+                <small className='text-2sm font-thin text-yellow'>Ann Kaboyo.</small>
             </div>
-            <div  className='w-8/12 mx-auto'>
-                <p className='text-center text-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                {/* <img src="https://media.istockphoto.com/photos/pensive-mature-man-looking-at-the-camera-on-gray-background-picture-id1334905996?k=20&m=1334905996&s=612x612&w=0&h=yzzgyBbSI7q4UdB3GkyNFoGyBb7Kw1Sm7cu5NaT0d1o=" alt="" /> */}
+
+            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+                <ImQuotesLeft/>
+                <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
+                <ImQuotesLeft className='ml-auto'/>
+                <small className='text-2sm font-thin text-yellow'>Randy Wilson.</small>
             </div>
-            <div  className='w-8/12 mx-auto'>
-                <p className='text-center text-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                {/* <img src="https://media.istockphoto.com/photos/serious-hispanic-girl-picture-id532321925?k=20&m=532321925&s=612x612&w=0&h=jUnYLYYqmKT7TB5jjIRyFNBmydcpMx_CAjEKlAvDSlI=" alt="" /> */}
+
+            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+                <ImQuotesLeft/>
+                <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
+                <ImQuotesLeft className='ml-auto'/>
+                <small className='text-2sm font-thin text-yellow'>Ritah Anyango.</small>
             </div>
+
         </OwlCarousel>
     </div>
   )
