@@ -4,7 +4,7 @@ import burger from '../assets/Images/burger7.png'
 
 const Soon = () => {
   return (
-    <div className='bg-yellow my-40 flex items-center justify-between p-20'>
+    <div className='bg-yellow mt-40 flex items-center justify-between p-20'>
         <div className=''>
             <h1 className='font-bold text-black text-7xl'>Coming Soon.</h1>
             <h1 className='font-bold text-6xl text-white'>Always<br /> <span className='text-black'>the Hottest Burger.</span></h1>
