@@ -26,7 +26,7 @@ const Cto = () => {
               <h3 className='font-thin'>Wide Map Coverage</h3>
               </div>
             </div>
-            <div className='flex justify-center items-center mt-20'>
+            <div className='flex justify-center items-center md:mt-20 mt-10'>
               <button className='bg-yellow text-black pl-10 pr-10 pt-4 pb-4 rounded-3xl font-semibold mb-4'>Read More</button>
             </div>
         </div>
