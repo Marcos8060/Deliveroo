@@ -6,9 +6,9 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const Cto = () => {
   return (
-    <div className='mt-40 flex md:items-center w-12/12 flex-col'>
-        <img className='object-cover md:w-7/12 w-full h-screen' src={home} alt="" />
-        <div className='bg-black text-white h-auto md:p-20 p-4'>
+    <div className='mt-40 md:flex md:items-center w-12/12 grid'>
+        <img className='object-cover md:w-7/12 w-full md:h-screen h-auto' src={home} alt="" />
+        <div className='bg-black text-white h-screen md:p-20 p-4'>
             <h1 className='font-bold md:text-5xl text-4xl mt-4'>Sit at Home <br />  <span className='text-yellow'>We will take care of you.</span></h1><br />
             <p className='text-gray-400 font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in accusantium esse beatae culpa!</p>
             <br /><br />
