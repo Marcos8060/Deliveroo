@@ -24,8 +24,8 @@ const Testimonial = () => {
             }
         },
         navText:[
-          '<i class="bi bi-chevron-left"></i>',
-          '<i class="bi bi-chevron-right"></i>',
+          '<i class="bi bi-arrow-return-left"></i>',
+          '<i class="bi bi-arrow-return-right"></i>',
         ],
     }
 

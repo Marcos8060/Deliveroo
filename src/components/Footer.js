@@ -1,6 +1,5 @@
 import React from 'react'
 import footer from '../assets/Images/footer.jpg'
-import { TbTruckDelivery } from 'react-icons/tb'
 import { ImFacebook2 } from 'react-icons/im'
 import  { BsTwitter } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
