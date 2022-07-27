@@ -40,7 +40,7 @@ const Products = () => {
         
         <OwlCarousel {...options}>
 
-           <div className='cursor-pointer w-10/12 mt-10 mb-10'>
+           <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
                 <span className='text-center font-bold text-2xl'>Pepperoni</span>
@@ -52,7 +52,7 @@ const Products = () => {
             </div>
 
 
-            <div className='cursor-pointer w-10/12 mt-10 mb-10'>
+            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
                 <span className='text-center font-bold text-2xl'>Pepperoni</span>
@@ -64,7 +64,7 @@ const Products = () => {
             </div>
 
 
-            <div className='cursor-pointer w-10/12 mt-10 mb-10'>
+            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
                 <span className='text-center font-bold text-2xl'>Pepperoni</span>
@@ -76,7 +76,7 @@ const Products = () => {
             </div>
 
 
-            <div className='cursor-pointer w-10/12 mt-10 mb-10'>
+            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
                 <span className='text-center font-bold text-2xl'>Pepperoni</span>
