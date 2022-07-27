@@ -12,7 +12,8 @@ const Cart = () => {
     <>
     <Navigation />
 
-    <div className='p-10 bg-white mb-20 rounded shadow-2xl w-8/12 ml-4 mt-10'>
+    <div className='flex'>
+    <div className='p-10 bg-white mb-20 rounded shadow-2xl w-8/12 ml-4 mt-16'>
         <div className='flex items-center justify-between w-full'>
            <h1 className='font-semibold text-2xl'>Shopping Cart</h1>
            <h1 className='font-semibold text-2xl'>3 Items</h1>
@@ -104,6 +105,15 @@ const Cart = () => {
            <span className='font-semibold ml-2'>Continue Shopping</span>
          </Link>
 
+    </div>
+    <div className='p-10 bg-white mb-20 rounded shadow-2xl w-3/12 mx-auto mt-16'>
+        <h1 className='text-2xl'>Order Summary</h1>
+        <hr className='mt-8'/>
+        <div className='flex items-center justify-between mt-4'>
+            <h1>Items 3</h1>
+            <h1>$490</h1>
+        </div>
+    </div>
     </div>
 
     <Footer />
