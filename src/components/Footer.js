@@ -5,6 +5,7 @@ import { ImFacebook2 } from 'react-icons/im'
 import  { BsTwitter } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsYoutube } from 'react-icons/bs'
+import { FaRocket } from 'react-icons/fa'
 
 
 const Footer = () => {
@@ -19,7 +20,7 @@ const Footer = () => {
         </div> 
         <div className='w-8/12 mx-auto'>
           <div className='flex items-center justify-center mb-8'>
-            <TbTruckDelivery className='text-yellow text-4xl'/>
+            <FaRocket className='text-yellow text-4xl'/>
             <h1 className='text-center font-bold text-white text-3xl'>Burger</h1>
           </div>
           <p className='text-center text-white mb-8 font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto neque, quisquam laudantium unde dolores explicabo! Qui saepe quos architecto suscipit?</p>
