@@ -15,6 +15,7 @@ const Testimonial = () => {
         responsive:{
             0:{
                 items:1,
+                dots: true,
             },
             600:{
                 items:3
@@ -30,7 +31,7 @@ const Testimonial = () => {
     }
 
   return (
-    <div className='p-20'>
+    <div className='md:p-20 p-8'>
         <p className='text-center text-yellow font-bold'>Testimonials</p>
         <h1 className='text-center font-bold text-black text-6xl'>Why Our Clients Choose Us.</h1>
         <ImQuotesLeft  className='mx-auto text-4xl text-yellow font-bold mt-14 mb-20'/>

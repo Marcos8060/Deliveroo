@@ -43,9 +43,9 @@ const Products = () => {
            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
-                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
                 <div className='flex items-center justify-between'>
-                  <p className="text-yellow font-semibold text-2xl underline mr-4">$40</p>
+                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
                   <GiShoppingBag className='text-center text-yellow text-2xl'/>
                 </div>
               </div>
@@ -55,9 +55,9 @@ const Products = () => {
             <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
-                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
                 <div className='flex items-center justify-between'>
-                  <p className="text-yellow font-semibold text-2xl underline mr-4">$40</p>
+                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
                   <GiShoppingBag className='text-center text-yellow text-2xl'/>
                 </div>
               </div>
@@ -67,9 +67,9 @@ const Products = () => {
             <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
-                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
                 <div className='flex items-center justify-between'>
-                  <p className="text-yellow font-semibold text-2xl underline mr-4">$40</p>
+                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
                   <GiShoppingBag className='text-center text-yellow text-2xl'/>
                 </div>
               </div>
@@ -79,9 +79,9 @@ const Products = () => {
             <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
               <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
               <div className='flex items-center justify-center flex-col'>
-                <span className='text-center font-bold text-2xl'>Pepperoni</span>
+                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
                 <div className='flex items-center justify-between'>
-                  <p className="text-yellow font-semibold text-2xl underline mr-4">$40</p>
+                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
                   <GiShoppingBag className='text-center text-yellow text-2xl'/>
                 </div>
               </div>
