@@ -1,5 +1,7 @@
 import React from 'react'
 import burger from '../assets/Images/burger7.png'
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 const Soon = () => {
@@ -12,7 +14,10 @@ const Soon = () => {
             <button className='hidden md:block bg-black text-white pl-20 pr-20 pt-4 pb-4 rounded-3xl mx-auto mt-4'>Read More</button>
         </div>
         <div>
-            <img className='object-cover' src={burger} alt="burger" />
+        <AnimationOnScroll animateIn="animate__fadeInRightBig">
+           <img className='object-fit w-12/12 mx-auto' src={burger} alt="" />
+        </AnimationOnScroll>
+            {/* <img className='object-cover' src={burger} alt="burger" /> */}
         </div>
     </div>
   )
