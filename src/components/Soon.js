@@ -17,7 +17,6 @@ const Soon = () => {
         <AnimationOnScroll animateIn="animate__fadeInRightBig">
            <img className='object-fit w-12/12 mx-auto' src={burger} alt="" />
         </AnimationOnScroll>
-            {/* <img className='object-cover' src={burger} alt="burger" /> */}
         </div>
     </div>
   )
