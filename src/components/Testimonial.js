@@ -16,6 +16,7 @@ const Testimonial = () => {
             0:{
                 items:1,
                 dots: true,
+                center: false
             },
             600:{
                 items:3

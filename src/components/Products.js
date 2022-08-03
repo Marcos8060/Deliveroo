@@ -19,6 +19,7 @@ const Products = () => {
     responsive:{
         0:{
             items:1,
+            center:false
         },
         600:{
             items:3
