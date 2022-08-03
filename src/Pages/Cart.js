@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Cart = () => {
   return (
     <>
-    <Navigation />
+    {/* <Navigation /> */}
 
     <div className='flex md:flex-row flex-col'>
     <div className='p-10 bg-white md:mb-20 rounded shadow-2xl md:w-8/12 w-11/12 mx-auto md:ml-4 mt-16'>
@@ -78,7 +78,7 @@ const Cart = () => {
         <hr />
 
 
-         <Link className='flex items-center' to='/'>
+         <Link className='flex items-center mt-4' to='/'>
            <HiOutlineArrowNarrowLeft />
            <span className='font-semibold ml-2'>Continue Shopping</span>
          </Link>
