@@ -11,9 +11,7 @@ const Delivery = () => {
          <h1 className='md:text-7xl text-4xl md:font-bold mb-4 text-center'>Express Home <span className='text-yellow font-semibold'>Delivery</span>.</h1>
          <p className='font-normal'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis obcaecati reprehenderit repellat saepe est quibusdam, nemo laboriosam cumque quo vitae!</p>
         </div>
-        <AnimationOnScroll animateIn="animate__fadeInRightBig">
-           <img className='object-fit w-12/12 mx-auto' src={rider} alt="" />
-        </AnimationOnScroll>
+           <img className='object-fit w-8/12 mx-auto' src={rider} alt="" />
     </div>
   )
 }

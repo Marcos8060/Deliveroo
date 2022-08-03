@@ -14,9 +14,7 @@ const Soon = () => {
             <button className='hidden md:block bg-black text-white pl-20 pr-20 pt-4 pb-4 rounded-3xl mx-auto mt-4'>Read More</button>
         </div>
         <div>
-        <AnimationOnScroll animateIn="animate__fadeInRightBig">
            <img className='object-fit w-12/12 mx-auto' src={burger} alt="" />
-        </AnimationOnScroll>
         </div>
     </div>
   )
