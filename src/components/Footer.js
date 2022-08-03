@@ -10,11 +10,11 @@ import { FaRocket } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div className='bg-black pt-20'>
-        <div className="flex items-center justify-center mb-10">
-            <img className='object-cover h-36 w-4/12 rounded-l-xl' src={footer} alt="" />
-            <div className='bg-yellow p-10  h-36 rounded-r-xl'>
-                <h1 className='text-black font-semibold text-2xl'>Call Us to make an Order Now</h1>
-                <p className='text-white font-bold text-2xl'>+254-702-854-204</p>
+        <div className="md:flex md:items-center md:justify-center grid mb-10">
+            <img className='object-cover h-36 md:w-4/12 w-12/12 mx-auto mb-2 md:rounded-l-xl' src={footer} alt="" />
+            <div className='bg-yellow p-10  md:h-36 md:rounded-r-xl w-10/12 mx-auto'>
+                <h1 className='text-black font-semibold md:text-2xl text-sm text-center'>Call Us to make an Order Now</h1>
+                <p className='text-white md:font-bold md:text-2xl text-sm text-center'>+254-702-854-204</p>
             </div>
         </div> 
         <div className='w-8/12 mx-auto'>
