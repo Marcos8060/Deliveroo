@@ -1,6 +1,8 @@
 import React from 'react'
-import burger from '../assets/Images/burger3.png'
+import burger from '../assets/Images/burger9.jpg'
 import { GiShoppingBag } from 'react-icons/gi'
+import { BsPlusCircle } from 'react-icons/bs'
+
 
 // OWL CAROUSEL
 import OwlCarousel from 'react-owl-carousel';
@@ -35,61 +37,69 @@ const Products = () => {
 }
 
   return (
-    <div className='container'>
+    <div className=''>
         <h3 className='text-center text-yellow font-bold mt-20'>Quick Pick</h3>
         <h1 className='text-center text-black font-bold md:text-6xl text-4xl mb-20'>Popular Goods</h1>
         
-        <OwlCarousel {...options}>
+        <div className='flex gap-4 items-center my-6 overflow-x-scroll no-scrollbar'>
 
-           <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
-              <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <div className='flex items-center justify-center flex-col'>
-                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
-                <div className='flex items-center justify-between'>
-                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
-                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
-                </div>
+          <div className="hover:relative hover:cursor-pointer card--wrapper">
+            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
+            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+              <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
+              <div className="flex items-center justify-between">
+                <p className='text-2xl mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
               </div>
             </div>
+          </div>
 
-
-            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
-              <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <div className='flex items-center justify-center flex-col'>
-                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
-                <div className='flex items-center justify-between'>
-                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
-                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
-                </div>
+          <div className="hover:relative hover:cursor-pointer card--wrapper">
+            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
+            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+              <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
+              <div className="flex items-center justify-between">
+                <p className='text-2xl mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
               </div>
             </div>
+          </div>
 
-
-            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
-              <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <div className='flex items-center justify-center flex-col'>
-                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
-                <div className='flex items-center justify-between'>
-                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
-                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
-                </div>
+          <div className="hover:relative hover:cursor-pointer card--wrapper">
+            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
+            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+              <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
+              <div className="flex items-center justify-between">
+                <p className='text-2xl mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
               </div>
             </div>
+          </div>
 
-
-            <div className='cursor-pointer w-10/12 mt-10 mb-10 mx-auto'>
-              <img className='object-fit ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...' src={burger} alt="burger" />
-              <div className='flex items-center justify-center flex-col'>
-                <span className='text-center md:font-bold font-semibold text-2xl'>Pepperoni</span>
-                <div className='flex items-center justify-between'>
-                  <p className="text-yellow md:font-semibold text-2xl underline mr-4">$40</p>
-                  <GiShoppingBag className='text-center text-yellow text-2xl'/>
-                </div>
+          <div className="hover:relative hover:cursor-pointer card--wrapper">
+            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
+            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+              <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
+              <div className="flex items-center justify-between">
+                <p className='text-2xl mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
               </div>
             </div>
+          </div>
 
+          <div className="hover:relative hover:cursor-pointer card--wrapper">
+            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
+            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+              <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
+              <div className="flex items-center justify-between">
+                <p className='text-2xl mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+              </div>
+            </div>
+          </div>
 
-        </OwlCarousel>
+        </div>
+
     </div>
   )
 }
