@@ -18,8 +18,8 @@ const Products = () => {
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='mb-2'>Pepperoni</p>
               <div className="flex items-center justify-between">
-                <p className='text-2xl mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+                <p className='mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
               </div>
             </div>
           </div>
@@ -29,8 +29,8 @@ const Products = () => {
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='mb-2'>Pepperoni</p>
               <div className="flex items-center justify-between">
-                <p className='text-2xl mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+                <p className='mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
               </div>
             </div>
           </div>
@@ -40,8 +40,8 @@ const Products = () => {
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='mb-2'>Pepperoni</p>
               <div className="flex items-center justify-between">
-                <p className='text-2xl mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+                <p className='mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
               </div>
             </div>
           </div>
@@ -51,8 +51,8 @@ const Products = () => {
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='mb-2'>Pepperoni</p>
               <div className="flex items-center justify-between">
-                <p className='text-2xl mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+                <p className='mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@ const Products = () => {
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='mb-2'>Pepperoni</p>
               <div className="flex items-center justify-between">
-                <p className='text-2xl mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-4xl ml-10'/>
+                <p className='mr-10'>$80</p>
+                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
               </div>
             </div>
           </div>

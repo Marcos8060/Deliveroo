@@ -40,7 +40,9 @@ const Navigation = () => {
             <Link className='text-white' to='/cart'>
               <GiShoppingBag className='text-2xl mb-3 mr-10'/>
             </Link>
-            <BsFillPersonCheckFill className="text-2xl mb-3 text-white" />
+            <div>
+              <BsFillPersonCheckFill className="text-2xl text-white" />
+            </div>
           </div>
         </div>
     </>
