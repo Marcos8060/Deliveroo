@@ -4,37 +4,7 @@ import { GiShoppingBag } from 'react-icons/gi'
 import { BsPlusCircle } from 'react-icons/bs'
 
 
-// OWL CAROUSEL
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
-
-
 const Products = () => {
-
-  const options = {
-    loop: true,
-    margin:10,
-    nav:true,
-    center: true,
-    responsive:{
-        0:{
-            items:1,
-            center:false
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    },
-    navText:[
-      '<i class="bi bi-chevron-left"></i>',
-      '<i class="bi bi-chevron-right"></i>',
-    ],
-}
 
   return (
     <div className=''>
