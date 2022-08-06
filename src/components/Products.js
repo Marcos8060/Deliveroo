@@ -43,7 +43,7 @@ const Products = () => {
         
         <div className='flex gap-4 items-center my-6 overflow-x-scroll no-scrollbar'>
 
-          <div className="hover:relative hover:cursor-pointer card--wrapper">
+          <div className="relative hover:cursor-pointer card--wrapper">
             <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
@@ -54,7 +54,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="hover:relative hover:cursor-pointer card--wrapper">
+          <div className="relative hover:cursor-pointer card--wrapper">
             <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
@@ -65,7 +65,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="hover:relative hover:cursor-pointer card--wrapper">
+          <div className="relative hover:cursor-pointer card--wrapper">
             <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
@@ -76,7 +76,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="hover:relative hover:cursor-pointer card--wrapper">
+          <div className="relative hover:cursor-pointer card--wrapper">
             <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
@@ -87,7 +87,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="hover:relative hover:cursor-pointer card--wrapper">
+          <div className="relative hover:cursor-pointer card--wrapper">
             <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
             <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-1/2 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
               <p className='text-3xl mb-10 font-thin'>Pepperoni</p>
