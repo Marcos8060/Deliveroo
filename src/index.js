@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Cart from './Pages/Cart';
+import Detail from './Pages/Detail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App />}></Route>
         <Route exact path="/cart" element={<Cart />}></Route>
+        <Route exact path="/detail" element={<Detail />}></Route>
       </Routes>
   </Router>
     </React.StrictMode>
