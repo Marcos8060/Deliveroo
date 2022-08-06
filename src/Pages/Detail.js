@@ -9,11 +9,11 @@ const Detail = () => {
   return (
     <>
       <div className="md:flex grid px-4">
-        <div className='md:flex grid md:w-8/12 w-full mx-auto shadow-2xl md:my-20 my-10 p-10'>
-            <div>
+        <div className='md:flex grid md:w-8/12 w-full mx-auto shadow-2xl md:my-20 my-10 p-8'>
+            <div className='w-6/12'>
                 <img src={image} alt="" />
             </div>
-            <div>
+            <div  className='w-6/12'>
                 <small className='bg-yellow rounded p-1 font-thin'>Official Store</small>
                 <h1 className='my-2 text-2xl'>Pepperoni</h1>
                 <small className='bg-yellow rounded p-1 font-thin uppercase'>Deal of the day</small>
