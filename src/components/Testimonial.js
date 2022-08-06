@@ -12,6 +12,8 @@ const Testimonial = () => {
         margin:10,
         nav:true,
         center: true,
+        autoplay: true,
+        autoplayTimeout: 7000,
         responsive:{
             0:{
                 items:1,
@@ -39,7 +41,7 @@ const Testimonial = () => {
 
         <OwlCarousel {...options}>
 
-            <div className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8 shadow-2xl'>
+            <div className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
                 <ImQuotesLeft/>
                 <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
                 <ImQuotesLeft className='ml-auto'/>
