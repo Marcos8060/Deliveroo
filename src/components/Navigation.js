@@ -1,11 +1,9 @@
 import React,{useState} from 'react'
 import { GiShoppingBag } from 'react-icons/gi'
-import { HiUserCircle } from 'react-icons/hi'
 import { Link, NavLink  } from 'react-router-dom'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { BsFillPersonCheckFill } from "react-icons/bs";
-import { IoMdArrowDropdown } from 'react-icons/io'
 
 const Navigation = () => {
   const [open,setOpen] = useState(false)
@@ -47,7 +45,7 @@ const Navigation = () => {
                         <Link to='/'>Profile</Link>
                       </li>
                       <li className='hover:font-bold my-2'>
-                        <Link to='/'>Sign Up</Link>
+                        <Link to='/register'>Sign Up</Link>
                       </li>
                       <li className='hover:font-bold'>
                         <Link to='/'>Settings</Link>
