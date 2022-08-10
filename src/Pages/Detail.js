@@ -1,19 +1,22 @@
 import React,{useState,useEffect} from 'react'
-import image from '../assets/Images/burger3.png'
 import Footer from '../components/Footer'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { TbTruckDelivery } from 'react-icons/tb'
 import { GiCardPickup } from 'react-icons/gi'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import { detail } from '../axios'
+// import { detail } from '../axios'
+
 
 const Detail = () => {
     const { id } = useParams();
+
+    const detail = `http://127.0.0.1:8000/api/products/${id}/`
+
     const [ data,setData] = useState([])
 
     useEffect(() => {
-        axios.get(detail/`${id}/`)
+        axios.get(detail)
         .then((res) =>{
             console.log(res.data);
             setData(res.data)
@@ -28,7 +31,7 @@ const Detail = () => {
       <div className="md:flex grid px-4">
         <div className='md:flex grid md:w-8/12 w-full mx-auto shadow-2xl md:my-20 my-10 p-8'>
             <div className='w-6/12'>
-                <img src={data.image} alt="" />
+                <img className='h-3/12 w-10/12 mx-auto' src={data.image} alt="" />
             </div>
             <div  className='w-6/12'>
                 <small className='bg-yellow rounded p-1 font-thin'>Official Store</small>
