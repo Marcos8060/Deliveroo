@@ -24,7 +24,7 @@ const Detail = () => {
         .catch((err) =>{
             console.log(err.response.status)
         })
-    },[])
+    },[detail])
     
   return (
     <>
