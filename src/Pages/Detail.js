@@ -5,7 +5,8 @@ import { TbTruckDelivery } from 'react-icons/tb'
 import { GiCardPickup } from 'react-icons/gi'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-// import { detail } from '../axios'
+import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
 
 
 const Detail = () => {
@@ -30,10 +31,10 @@ const Detail = () => {
     <>
       <div className="md:flex grid px-4">
         <div className='md:flex grid md:w-8/12 w-full mx-auto shadow-2xl md:my-20 my-10 p-8'>
-            <div className='w-6/12'>
-                <img className='h-3/12 w-10/12 mx-auto' src={data.image} alt="" />
+            <div className='md:w-6/12'>
+                <img className='h-3/12 md:w-10/12 w-full mx-auto mb-2' src={data.image} alt="" />
             </div>
-            <div  className='w-6/12'>
+            <div  className='md:w-6/12'>
                 <small className='bg-yellow rounded p-1 font-thin'>Official Store</small>
                 <h1 className='my-2 text-2xl'>{data.name}</h1>
                 <small className='bg-yellow rounded p-1 font-thin uppercase'>Deal of the day</small>
@@ -42,6 +43,10 @@ const Detail = () => {
                 <p className='my-4 text-sm'>+ delivery from KSh 92 (free delivery if order above KSh 999) to CBD - UON/Globe/Koja/River Road</p>
                 <p className='my-2'>{data.description}</p>
                 <button className='bg-yellow uppercase p-3 w-full rounded text-white font-semibold my-2'>Add To Cart</button>
+                <Link to='/' className="flex items-center hover:text-yellow">
+                  <HiOutlineArrowNarrowLeft />
+                  Back to Shopping
+                </Link>
             </div>
         </div>
         <div className='md:w-3/12 w-full mx-auto shadow-2xl md:my-20 my-4 p-4'>
