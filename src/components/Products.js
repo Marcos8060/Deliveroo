@@ -1,10 +1,24 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import burger from '../assets/Images/burger9.jpg'
 import { GiShoppingBag } from 'react-icons/gi'
 import { BsPlusCircle } from 'react-icons/bs'
+import axios from 'axios'
+import { products } from '../axios'
 
 
 const Products = () => {
+  const [data,setData] = useState([])
+
+  useEffect(() =>{
+    axios.get(products)
+    .then((res) =>{
+      console.log(res.data);
+      setData(res.data)
+    })
+    .catch((err) =>{
+      console.log(err.response.status)
+    })
+  },[])
 
   return (
     <div className=''>
@@ -13,60 +27,20 @@ const Products = () => {
         
         <div className='flex gap-4 items-center my-6 overflow-x-scroll no-scrollbar'>
 
-          <div className="relative hover:cursor-pointer card--wrapper">
-            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
-            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
-              <p className='mb-2'>Pepperoni</p>
-              <div className="flex items-center justify-between">
-                <p className='mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
-              </div>
-            </div>
-          </div>
+         { data.map((item) =>(
 
-          <div className="relative hover:cursor-pointer card--wrapper">
-            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
-            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
-              <p className='mb-2'>Pepperoni</p>
-              <div className="flex items-center justify-between">
-                <p className='mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
+            <div className="relative hover:cursor-pointer card--wrapper" key={item.id}>
+               <img className='h-80 w-80 rounded-2xl' src={item.image} alt='burger' />
+              <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
+                <p className='mb-2'>{item.name}</p>
+                <div className="flex items-center justify-between">
+                  <p className='mr-10'>ksh {item.price}</p>
+                  <BsPlusCircle className='text-yellow text-2xl ml-10'/>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="relative hover:cursor-pointer card--wrapper">
-            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
-            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
-              <p className='mb-2'>Pepperoni</p>
-              <div className="flex items-center justify-between">
-                <p className='mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative hover:cursor-pointer card--wrapper">
-            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
-            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
-              <p className='mb-2'>Pepperoni</p>
-              <div className="flex items-center justify-between">
-                <p className='mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative hover:cursor-pointer card--wrapper">
-            <img className='h-80 w-80 rounded-2xl' src={burger} alt='burger' />
-            <div className="absolute bottom-0 left-0 right-0 px-2 py-4 h-2/12 bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white">
-              <p className='mb-2'>Pepperoni</p>
-              <div className="flex items-center justify-between">
-                <p className='mr-10'>$80</p>
-                <BsPlusCircle className='text-yellow text-2xl ml-10'/>
-              </div>
-            </div>
-          </div>
+         ))}
 
         </div>
 

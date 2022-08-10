@@ -1,26 +1,43 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import image from '../assets/Images/burger3.png'
 import Footer from '../components/Footer'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { TbTruckDelivery } from 'react-icons/tb'
 import { GiCardPickup } from 'react-icons/gi'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
+import { detail } from '../axios'
 
 const Detail = () => {
+    const { id } = useParams();
+    const [ data,setData] = useState([])
+
+    useEffect(() => {
+        axios.get(detail/`${id}/`)
+        .then((res) =>{
+            console.log(res.data);
+            setData(res.data)
+        })
+        .catch((err) =>{
+            console.log(err.response.status)
+        })
+    },[])
+    
   return (
     <>
       <div className="md:flex grid px-4">
         <div className='md:flex grid md:w-8/12 w-full mx-auto shadow-2xl md:my-20 my-10 p-8'>
             <div className='w-6/12'>
-                <img src={image} alt="" />
+                <img src={data.image} alt="" />
             </div>
             <div  className='w-6/12'>
                 <small className='bg-yellow rounded p-1 font-thin'>Official Store</small>
-                <h1 className='my-2 text-2xl'>Pepperoni</h1>
+                <h1 className='my-2 text-2xl'>{data.name}</h1>
                 <small className='bg-yellow rounded p-1 font-thin uppercase'>Deal of the day</small>
                 <hr className='my-4'/>
-                <h1 className='font-bold text-2xl'>Ksh 38</h1>
+                <h1 className='font-bold text-2xl'>Ksh {data.price}</h1>
                 <p className='my-4 text-sm'>+ delivery from KSh 92 (free delivery if order above KSh 999) to CBD - UON/Globe/Koja/River Road</p>
-                <p className='my-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio a quod quasi doloremque quam voluptatibus similique eaque quidem non.</p>
+                <p className='my-2'>{data.description}</p>
                 <button className='bg-yellow uppercase p-3 w-full rounded text-white font-semibold my-2'>Add To Cart</button>
             </div>
         </div>
