@@ -54,34 +54,7 @@ const Navigation = () => {
                       </li>
                     </ul>
                   <div>
-                  
-                  {/* <div>
-                      <Link className='text-white' to='/cart'>
-                        <GiShoppingBag className='text-2xl mb-3 mr-10'/>
-                      </Link>
-                  </div> */}
             </div>
-            {/* <div class="">
-                <div class="dropdown inline-block relative">
-                  <div class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
-                    <BsFillPersonCheckFill className="text-2xl text-white" />
-                    <IoMdArrowDropdown className='text-yellow'/>
-                  </div>
-                  <ul class="dropdown-menu text-left bg-white rounded p-10 absolute hidden text-gray-700 pt-1">
-                    <li className="">
-                      <Link to='/profile'>Profile</Link>
-                    </li>
-                    <li className="">
-                      <Link to='/profile'>Profile</Link>
-                    </li>
-                    <li className="">
-                      <Link to='/profile'>Profile</Link>
-                    </li>
-                  </ul>
-                </div>
-            </div> */}
-
-
             </div>
           </div>
         </div>
