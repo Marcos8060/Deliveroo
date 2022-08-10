@@ -5,6 +5,7 @@ import { Link, NavLink  } from 'react-router-dom'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { BsFillPersonCheckFill } from "react-icons/bs";
+import { IoMdArrowDropdown } from 'react-icons/io'
 
 const Navigation = () => {
   const [open,setOpen] = useState(false)
@@ -33,15 +34,54 @@ const Navigation = () => {
               <NavLink to="/business" className={({ isActive }) => isActive ? 'font-bold text-black no-underline' : 'md:text-white text-black no-underline'}>Services</NavLink>
             </li>
             <li className="cursor-pointer md:ml-8 text-xl md:my-0 my-7">
-              <NavLink to="/about" className={({ isActive }) => isActive ? 'font-bold text-black no-underline' : 'md:text-white text-black no-underline'}>Coming Soon</NavLink>
+              <NavLink to="/about" className={({ isActive }) => isActive ? 'font-bold text-black no-underline' : 'md:text-white text-black no-underline'}>
+                <GiShoppingBag className='text-2xl'/>
+              </NavLink>
             </li>
           </ul>
-          <div className="flex items-center justify-end pt-4 md:pt-2">
-            <Link className='text-white' to='/cart'>
-              <GiShoppingBag className='text-2xl mb-3 mr-10'/>
-            </Link>
-            <div>
-              <BsFillPersonCheckFill className="text-2xl text-white" />
+            <div className="flex items-center justify-end pt-2 md:pt-2 pr-20">
+                  <div className='dropdown inline-block relative'>
+                    <BsFillPersonCheckFill className="text-2xl text-white cursor-pointer" />
+                    <ul className='dropdown-menu hidden bg-yellow w-32 rounded p-4 text-left absolute pr-10'>
+                      <li className='hover:font-bold'>
+                        <Link to='/'>Profile</Link>
+                      </li>
+                      <li className='hover:font-bold my-2'>
+                        <Link to='/'>Sign Up</Link>
+                      </li>
+                      <li className='hover:font-bold'>
+                        <Link to='/'>Settings</Link>
+                      </li>
+                    </ul>
+                  <div>
+                  
+                  {/* <div>
+                      <Link className='text-white' to='/cart'>
+                        <GiShoppingBag className='text-2xl mb-3 mr-10'/>
+                      </Link>
+                  </div> */}
+            </div>
+            {/* <div class="">
+                <div class="dropdown inline-block relative">
+                  <div class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <BsFillPersonCheckFill className="text-2xl text-white" />
+                    <IoMdArrowDropdown className='text-yellow'/>
+                  </div>
+                  <ul class="dropdown-menu text-left bg-white rounded p-10 absolute hidden text-gray-700 pt-1">
+                    <li className="">
+                      <Link to='/profile'>Profile</Link>
+                    </li>
+                    <li className="">
+                      <Link to='/profile'>Profile</Link>
+                    </li>
+                    <li className="">
+                      <Link to='/profile'>Profile</Link>
+                    </li>
+                  </ul>
+                </div>
+            </div> */}
+
+
             </div>
           </div>
         </div>
