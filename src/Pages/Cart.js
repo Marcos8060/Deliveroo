@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
-
 const Cart = () => {
   return (
     <>

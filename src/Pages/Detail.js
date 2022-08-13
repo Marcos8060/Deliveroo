@@ -7,10 +7,14 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../redux/features/cart/cartSlice'
 
 
 const Detail = () => {
     const { id } = useParams();
+    const dispatch = useDispatch();
+
 
     const detail = `http://127.0.0.1:8000/api/products/${id}/`
 
@@ -19,7 +23,6 @@ const Detail = () => {
     useEffect(() => {
         axios.get(detail)
         .then((res) =>{
-            console.log(res.data);
             setData(res.data)
         })
         .catch((err) =>{
@@ -42,7 +45,7 @@ const Detail = () => {
                 <h1 className='font-bold text-2xl'>Ksh {data.price}</h1>
                 <p className='my-4 text-sm'>+ delivery from KSh 92 (free delivery if order above KSh 999) to CBD - UON/Globe/Koja/River Road</p>
                 <p className='my-2'>{data.description}</p>
-                <button className='bg-yellow uppercase p-3 w-full rounded text-white font-semibold my-2'>Add To Cart</button>
+                <button onClick={()=> dispatch(addToCart(data))} className='bg-yellow uppercase p-3 w-full rounded text-white font-semibold my-2'>Add To Cart</button>
                 <Link to='/' className="flex items-center hover:text-yellow">
                   <HiOutlineArrowNarrowLeft />
                   Back to Shopping

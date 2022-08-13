@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom'
 const Products = () => {
   const [data,setData] = useState([])
 
+
   useEffect(() =>{
     axios.get(products)
     .then((res) =>{
-      console.log(res.data);
       setData(res.data)
     })
     .catch((err) =>{
