@@ -2,14 +2,16 @@ import React from 'react'
 // import Navigation from '../components/Navigation'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import Footer from '../components/Footer'
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
-import { Link } from 'react-router-dom'
+// import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
+// import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import image from '../assets/Images/burger4.jpg'
 import { RiDeleteBinLine } from 'react-icons/ri'
+import { useDispatch } from 'react-redux'
+import { clearCart } from '../redux/features/cart/cartSlice'
 
 const Cart = () => {
 
+    const dispatch = useDispatch();
     const cartItems  = useSelector((store)=> store);
     console.log(cartItems)
   return (
@@ -54,7 +56,7 @@ const Cart = () => {
         </>
       ))}
          <div className="w-4/12 mx-auto">
-          <button className='bg-black py-2 px-4 uppercase text-white'>Clear Cart</button>
+          <button onClick={()=> dispatch(clearCart())} className='bg-black py-2 px-4 uppercase text-white'>Clear Cart</button>
          </div>
 
 
