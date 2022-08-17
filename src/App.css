@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400&family=Jost&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Jost', sans-serif;
 }
 .home--background{
-  background: #282932;
+  background: #4d4d4e;
 }
 
 
@@ -31,4 +34,15 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* cart */
+.cartImg{
+  max-width: 100px;
+}
+.price{
+  margin-right: -140px;
+}
+.quantity{
+  margin-right: -300px;
 }

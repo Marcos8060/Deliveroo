@@ -1,6 +1,5 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
-import burger from '../assets/Images/burger2.png'
 import soda from '../assets/Images/soda.png'
 import Delivery from '../components/Delivery'
 import Products from '../components/Products'

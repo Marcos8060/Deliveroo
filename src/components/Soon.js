@@ -1,8 +1,6 @@
 import React from 'react'
 import burger from '../assets/Images/burger7.png'
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-
 
 const Soon = () => {
   return (

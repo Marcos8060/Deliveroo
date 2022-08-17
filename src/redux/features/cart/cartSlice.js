@@ -16,10 +16,10 @@ const cartSlice = createSlice({
             const itemInCart = state.cartItems.find((item) => item.id === action.payload.id);
             // checking if item already exists in cart
             if(itemInCart){
-                alert('Item already in cart')
+                itemInCart.quantity++;
             }else{
-                state.cartItems.push({ ...action.payload, quantity: 1})
-            }
+            state.cartItems = [...state.cartItems, action.payload]
+             }
         }
     }
 })
