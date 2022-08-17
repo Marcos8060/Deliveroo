@@ -98,7 +98,7 @@ const Cart = () => {
           </form>
         </div>
         <div className='text-center'>
-          <h1 className='uppercase font-bold'>subtotal:  ksh {getTotals().totalPrice}</h1>
+          <h1 className='uppercase font-bold'>subtotal:  ksh {getTotals().totalPrice.toFixed(2)}</h1>
           <p>Taxes, shipping and discounts codes calculated at checkout</p>
           <button className='uppercase bg-black text-white py-2 px-8 mt-2 font-semibold mb-10'>Check out</button>
         </div>
