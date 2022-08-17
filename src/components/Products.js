@@ -17,7 +17,7 @@ const Products = () => {
     .catch((err) =>{
       console.log(err.response.status)
     })
-  },[])
+  },[data])
 
   return (
     <div className=''>

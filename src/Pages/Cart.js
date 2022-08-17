@@ -7,13 +7,13 @@ import Footer from '../components/Footer'
 import { useSelector } from 'react-redux'
 import { RiDeleteBinLine } from 'react-icons/ri'
 import { useDispatch } from 'react-redux'
-import { clearCart, removeItem } from '../redux/features/cart/cartSlice'
+import { clearCart, removeItem, increaseQuantity, decreaseQuantity } from '../redux/features/cart/cartSlice'
 
 const Cart = () => {
 
     const dispatch = useDispatch();
     const cartItems  = useSelector((store)=> store);
-
+    console.log(cartItems.cartItems);
     // const { amount } = useSelector((store) => store.cart)
 
     if(cartItems.cartItems.length < 1){
@@ -58,9 +58,9 @@ const Cart = () => {
               <p>ksh {item.price}</p>
             </div>
             <div className='flex items-center justify-center md:border md:quantity my-2 md:py-1 md:px-1'>
-              <AiOutlineMinus className='font-semibold mx-2'/>
-              <p className='font-bold'>0</p>
-              <AiOutlinePlus className='mx-2'/>
+              <AiOutlineMinus onClick={()=> dispatch(decreaseQuantity(item))} className='font-semibold mx-2 cursor-pointer' />
+              <p className='font-bold'>{item.amount}</p>
+              <AiOutlinePlus onClick={()=> dispatch(increaseQuantity(item))} className='mx-2 cursor-pointer'/>
             </div>
             <div>
               <p className='text-center'>ksh 1400</p>
