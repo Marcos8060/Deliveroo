@@ -13,7 +13,23 @@ const Cart = () => {
 
     const dispatch = useDispatch();
     const cartItems  = useSelector((store)=> store);
-    console.log(cartItems)
+
+    // const { amount } = useSelector((store) => store.cart)
+
+    if(cartItems.cartItems.length < 1){
+      return(
+        <>
+          <div className='bg-black w-12/12 h-32 flex justify-center items-center'>
+            <h1 className='text-center uppercase text-white font-semibold'>Shopping Cart</h1>
+            </div>
+          <section className='text-center my-40'>
+            <h1 className='text-4xl font-semibold'>Your Bag</h1>
+            <p>Is currently empty</p>
+          </section>
+        </>
+        
+      ) 
+    }
   return (
     <>
       <div className='bg-black w-12/12 h-32 flex justify-center items-center'>
