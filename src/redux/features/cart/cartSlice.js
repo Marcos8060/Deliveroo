@@ -20,6 +20,9 @@ const cartSlice = createSlice({
             }else{
             state.cartItems = [...state.cartItems, action.payload]
              }
+        },
+        clearCart:(state)=>{
+            state.cartItems = []
         }
     }
 })
