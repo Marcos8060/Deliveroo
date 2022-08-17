@@ -50,8 +50,12 @@ const Cart = () => {
           </div>
       
          <hr className='w-10/12 mx-auto mt-4 mb-4 text-gray'/>
+         
         </>
       ))}
+         <div className="w-4/12 mx-auto">
+          <button className='bg-black py-2 px-4 uppercase text-white'>Clear Cart</button>
+         </div>
 
 
       <div className="md:flex grid items-center justify-between w-10/12 mx-auto mt-10">
