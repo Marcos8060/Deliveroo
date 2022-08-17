@@ -13,8 +13,11 @@ const Cart = () => {
 
     const dispatch = useDispatch();
     const cartItems  = useSelector((store)=> store);
-    console.log(cartItems.cartItems);
-    // const { amount } = useSelector((store) => store.cart)
+    // console.log(cartItems.cartItems);
+
+    const { total } = useSelector((state) => state)
+
+    console.log(total);
 
     if(cartItems.cartItems.length < 1){
       return(
@@ -51,19 +54,25 @@ const Cart = () => {
               <div>
                 <p className='font-thin'>{item.name}</p>
                 <p className='font-semibold'>Price: {item.price}</p>
-                <RiDeleteBinLine onClick={()=> dispatch(removeItem(item.id))} className='mt-2 cursor-pointer'/>
+                <RiDeleteBinLine onClick={()=> dispatch(removeItem(item.id))} className='mt-2 hover:text-red-400 cursor-pointer'/>
               </div>
             </div>
             <div className='md:price text-center'>
               <p>ksh {item.price}</p>
             </div>
             <div className='flex items-center justify-center md:border md:quantity my-2 md:py-1 md:px-1'>
-              <AiOutlineMinus onClick={()=> dispatch(decreaseQuantity(item))} className='font-semibold mx-2 cursor-pointer' />
-              <p className='font-bold'>{item.amount}</p>
+              <AiOutlineMinus onClick={()=> {
+                if(item.amount === 1){
+                  dispatch(removeItem(item.id));
+                  return
+              }
+              dispatch(decreaseQuantity(item))
+              }} className='font-semibold mx-2 cursor-pointer' />
+              <p className='font-bold'>{item.quantity}</p>
               <AiOutlinePlus onClick={()=> dispatch(increaseQuantity(item))} className='mx-2 cursor-pointer'/>
             </div>
             <div>
-              <p className='text-center'>ksh 1400</p>
+              <p className='text-center'>ksh {item.price * item.quantity}</p>
             </div>
           </div>
       
@@ -84,7 +93,7 @@ const Cart = () => {
           </form>
         </div>
         <div className='text-center'>
-          <h1 className='uppercase font-bold'>subtotal:  ksh 4000</h1>
+          <h1 className='uppercase font-bold'>subtotal:  ksh {total}</h1>
           <p>Taxes, shipping and discounts codes calculated at checkout</p>
           <button className='uppercase bg-black text-white py-2 px-8 mt-2 font-semibold mb-10'>Check out</button>
         </div>
