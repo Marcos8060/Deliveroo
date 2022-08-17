@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import { useSelector } from 'react-redux'
 import { RiDeleteBinLine } from 'react-icons/ri'
 import { useDispatch } from 'react-redux'
-import { clearCart } from '../redux/features/cart/cartSlice'
+import { clearCart, removeItem } from '../redux/features/cart/cartSlice'
 
 const Cart = () => {
 
@@ -45,13 +45,13 @@ const Cart = () => {
 
       { cartItems.cartItems.map((item) =>(
         <>
-          <div className='md:flex grid md:items-center mt-20 md:justify-between w-10/12 mx-auto'>
+          <div key={item.id} className='md:flex grid md:items-center mt-20 md:justify-between w-10/12 mx-auto'>
             <div className='flex items-center'>
               <img className='w-32 md:mr-3 mx-4 md:cartImg rounded' src={item.image} alt="" />
               <div>
                 <p className='font-thin'>{item.name}</p>
                 <p className='font-semibold'>Price: {item.price}</p>
-                <RiDeleteBinLine className='mt-2'/>
+                <RiDeleteBinLine onClick={()=> dispatch(removeItem(item.id))} className='mt-2 cursor-pointer'/>
               </div>
             </div>
             <div className='md:price text-center'>
