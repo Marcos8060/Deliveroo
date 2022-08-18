@@ -1,6 +1,5 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
-import soda from '../assets/Images/soda.png'
 import Delivery from '../components/Delivery'
 import Products from '../components/Products'
 import Cto from '../components/Cto'
@@ -15,7 +14,7 @@ const Home = () => {
     <>
         {/* <Navigation /> */}
         <Hero />
-        
+
         <Delivery />
 
         <Products />
