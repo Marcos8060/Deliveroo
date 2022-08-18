@@ -12,7 +12,7 @@ import Hero from '../components/Hero'
 const Home = () => {
   return (
     <>
-        {/* <Navigation /> */}
+        <Navigation />
         <Hero />
 
         <Delivery />

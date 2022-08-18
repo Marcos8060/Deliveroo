@@ -19,6 +19,7 @@
   display: block !important;
   border:0px solid black;
 }
+
 .owl-prev { left: -20px; }
 .owl-next { right: -20px; }
 .owl-prev i, .owl-next i {color: black;font-size: 20px;font-weight: bolder;}
@@ -32,9 +33,9 @@
   min-width: 300px;
 }
 
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 
 /* cart */
 .cartImg{
