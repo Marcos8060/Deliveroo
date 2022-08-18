@@ -1,24 +1,26 @@
 import React from 'react'
+import styled from 'styled-components'
+import burger from '../assets/Images/burger7.png'
 
 const Hero = () => {
   return (
     <>
-    <div class="wraper">
-        <div class="div-1">
-            <div class="content">
-            <h1>First Div</h1>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio consectetur harum, velit exercitationem expedita illum numquam et a? Rem est esse quas nulla saepe quis blanditiis vitae sed laboriosam quasi?
+    <HeroWrapper>
+        <div className='flex'>
+            <div className='w-1/2 mx-auto h-screen'>
+              <h1>HELLO WORLD</h1>  
+            </div>
+            <div className='w-1/2 mx-auto bg-yellow h-screen'>
+              <h1>I LOVE REACT</h1>
             </div>
         </div>
-        <div class="div-2">
-            <div class="content">
-            <h1>Second Div</h1>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis amet commodi nisi beatae illo similique explicabo modi deleniti obcaecati, voluptatibus consequatur dolor distinctio rerum, cupiditate ducimus saepe laborum facere ad!
-            </div>
-        </div>
-    </div>
+    </HeroWrapper>
     </>
   )
 }
 
 export default Hero
+
+const HeroWrapper = styled.div`
+ background-image: url()
+`

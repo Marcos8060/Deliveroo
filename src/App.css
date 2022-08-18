@@ -49,7 +49,7 @@
 
 /* Hero section */
 .wraper{
-  width: 100%;
+  width: 100%; 
   height: 100vh;
   background: #000;
   display: flex;
@@ -58,14 +58,14 @@
 .div-1{
   width: calc( 50% - 40px) ;
   height: 100vh;
-  background: #ff005b;
+  background: #fff;
 }
 
 .div-2{
   width: calc( 50% + 40px );
   height: 100vh;
-  background: #17274c;
-  border-left: 80px solid #ff005b;
+  background: #F7B614;
+  border-left: 80px solid #fff;
   border-bottom: 630px solid transparent;
   box-sizing: border-box;
 }
