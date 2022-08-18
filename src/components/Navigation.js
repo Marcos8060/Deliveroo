@@ -1,17 +1,39 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import { GiShoppingBag } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsFillPersonCheckFill } from "react-icons/bs";
+import logo from '../assets/Images/logo.png'
 
 const Navigation = () => {
+  const [navBackground, setNavBackground] = useState(false);
+
+  const navRef = useRef();
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 40;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg fixed-top" 
+       style={{
+        transition: "1s ease",
+        backgroundColor: navBackground ? "#fff" : "transparent",
+      }} >
         <div className="container-fluid">
-          <Link className="text-3xl no-underline text-black  font-bold" to='/'>
-            Delive<span className="text-yellow">roo</span>
+          <Link className=" no-underline text-black" to='/'>
+            <img className="w-36" src={logo} alt="" />
           </Link>
           <button
             className="navbar-toggler"
@@ -50,7 +72,7 @@ const Navigation = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown link
+                  <BsFillPersonCheckFill />
                 </Link>
                 <ul
                   className="dropdown-menu"
@@ -73,6 +95,9 @@ const Navigation = () => {
                   </li>
                 </ul>
               </li>
+              <div className="nav-item">
+                <GiShoppingBag className="black text-2xl"/>
+              </div>
             </ul>
           </div>
         </div>
