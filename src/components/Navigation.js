@@ -5,6 +5,7 @@ import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 import logo from '../assets/Images/logo.png'
+import Sidebar from "./Sidebar";
 
 const Navigation = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -72,7 +73,7 @@ const Navigation = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <BsFillPersonCheckFill />
+                  Account
                 </Link>
                 <ul
                   className="dropdown-menu"
@@ -95,10 +96,10 @@ const Navigation = () => {
                   </li>
                 </ul>
               </li>
-              <div className="nav-item">
-                <GiShoppingBag className="black text-2xl"/>
-              </div>
             </ul>
+            <div className="nav-item">
+              <Sidebar />
+            </div>
           </div>
         </div>
       </nav>
