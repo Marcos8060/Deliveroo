@@ -27,7 +27,7 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg fixed-top"
+        className="navbar navbar-expand-lg fixed-top shadow-xl"
         style={{
           transition: "1s ease",
           backgroundColor: navBackground ? "#fff" : "transparent",
