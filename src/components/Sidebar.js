@@ -25,7 +25,7 @@ const Sidebar = () => {
         )}
 
         <div
-          className={`top-0 right-0 w-[24vw] bg-white p-10 pl-20 mt-16 text-white fixed h-full z-40 ${
+          className={`top-0 right-0 w-[24vw] bg-white p-4 pl-20 mt-16 text-white fixed h-full z-40 ${
             showSidebar ? "translate-x-0 " : "translate-x-full"
           }`}
         >
@@ -37,8 +37,29 @@ const Sidebar = () => {
                 <small>Pepperoni</small>
               </div>
               <div>
+                <small>x3</small>
+              </div>
+              <div>
                 <p>ksh 300</p>
               </div>
+            </div>
+            <hr />
+            <div className="flex items-center justify-between">
+              <div>
+                <img className="rounded w-16" src={burger} alt="" />
+                <small>Pepperoni</small>
+              </div>
+              <div>
+                <small>x3</small>
+              </div>
+              <div>
+                <p>ksh 300</p>
+              </div>
+            </div>
+            <hr />
+            <div className="flex items-center justify-between">
+                <p>Total</p>
+                <p>ksh 400</p>
             </div>
           </div>
         </div>
