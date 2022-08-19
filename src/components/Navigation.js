@@ -1,5 +1,4 @@
 import React, { useState,useEffect,useRef } from "react";
-import { GiShoppingBag } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
