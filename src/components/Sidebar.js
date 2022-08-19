@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { GiShoppingBag } from "react-icons/gi";
 import burger from "../assets/Images/burger8.jpeg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+
+  const cartItems = useSelector((store) => store);
 
   return (
     <>
@@ -26,46 +29,47 @@ const Sidebar = () => {
         )}
 
         <div
-          className={`top-0 right-0 w-[24vw] bg-white p-4 pl-20 mt-16 text-white fixed h-full z-40 ${
+          className={`top-0 right-0 md:w-[24vw] w-[70vw] bg-white p-4 pl-20 mt-16 text-white fixed h-full z-40 ${
             showSidebar ? "translate-x-0 " : "translate-x-full"
           }`}
         >
           <div className="text-black">
-            {/* <p>3 Items</p> */}
-            <div className="flex items-center justify-between">
-              <div>
-                <img className="rounded w-16" src={burger} alt="" />
-                <small>Pepperoni</small>
-              </div>
-              <div>
-                <small>x3</small>
-              </div>
-              <div>
-                <p>ksh 300</p>
-              </div>
+            <div className="flex items-center justify-between uppercase">
+                <small>Product</small>
+                <small>Quantity</small>
+                <small>Price</small>
             </div>
             <hr />
-            <div className="flex items-center justify-between">
-              <div>
-                <img className="rounded w-16" src={burger} alt="" />
-                <small>Pepperoni</small>
-              </div>
-              <div>
-                <small>x3</small>
-              </div>
-              <div>
-                <p>ksh 300</p>
-              </div>
-            </div>
-            <hr />
+            {cartItems.cartItems.map((item) => (
+             <>
+                <div className="flex items-center justify-between">
+                    <div>
+                    <img className="rounded w-16" src={item.image} alt="" />
+                    <small>{item.name}</small>
+                    </div>
+                    <div>
+                    <small>x3</small>
+                    </div>
+                    <div>
+                    <p>ksh {item.price}</p>
+                    </div>
+                </div>
+                <hr />
+             </>
+            ))}
             <div className="flex items-center justify-between">
               <p>Total</p>
               <p>ksh 400</p>
             </div>
             <div className="w-full">
-                <button className='bg-black p-1 rounded w-full'>
-                 <Link to='/cart' className="uppercase text-white no-underline text-sm">go to cart</Link>
-                </button>
+              <button className="bg-black p-1 rounded w-full">
+                <Link
+                  to="/cart"
+                  className="text-white no-underline text-2sm"
+                >
+                  go to cart
+                </Link>
+              </button>
             </div>
           </div>
         </div>
