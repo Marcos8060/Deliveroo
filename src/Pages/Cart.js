@@ -51,7 +51,7 @@ const Cart = () => {
       </div>
       <div className="hidden md:block md:flex items-center justify-between w-10/12 mx-auto mt-24 uppercase font-semibold">
         <h1 className="text-xl">Product</h1>
-        <h1 className="ml-48 text-xl">Price </h1>
+        <h1 className="ml-44 text-xl">Price </h1>
         <h1 className="text-xl">Quantity</h1>
         <h1 className="text-xl">Total</h1>
       </div>
