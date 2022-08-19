@@ -44,4 +44,16 @@
 .quantity{
   margin-right: -300px;
 }
-
+/* absolute bottom-0 left-0 right-0 px-2 py-4 h-18v bg-black rounded-bl-2xl rounded-br-2xl	flex flex-col justify-center items-center w-12/12 opacity-80 text-white */
+.overlay:hover{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 80;
+}
