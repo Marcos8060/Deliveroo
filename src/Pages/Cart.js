@@ -1,5 +1,5 @@
 import React from "react";
-// import Navigation from '../components/Navigation'
+import Navigation from '../components/Navigation'
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import Footer from "../components/Footer";
 // import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
@@ -38,6 +38,7 @@ const Cart = () => {
         <section className="text-center my-20">
           <h1 className="text-4xl font-semibold">Your Bag</h1>
           <p>Is currently empty</p>
+          <button className="bg-black text-white rounded p-2">Go back to shop</button>
         </section>
       </>
     );
@@ -55,17 +56,17 @@ const Cart = () => {
         <h1 className="text-xl">Quantity</h1>
         <h1 className="text-xl">Total</h1>
       </div>
-      <hr className="hidden md:block w-10/12 mx-auto mt-2 mb-4 text-gray" />
+      <hr className="hidden md:block w-10/12 mx-auto mt-2 text-gray" />
 
       {cartItems.cartItems.map((item) => (
         <>
           <div
             key={item.id}
-            className="md:flex grid md:items-center mt-20 md:justify-between w-10/12 mx-auto"
+            className="md:flex grid md:items-center mt-10 md:justify-between w-10/12 mx-auto"
           >
             <div className="flex items-center">
               <img
-                className="w-32 md:mr-3 mx-4 md:cartImg rounded"
+                className="w-32 h-18v md:mr-3 mx-4 md:cartImg rounded"
                 src={item.image}
                 alt=""
               />

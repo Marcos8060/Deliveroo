@@ -44,7 +44,7 @@ const Sidebar = () => {
              <>
                 <div className="flex items-center justify-between">
                     <div>
-                    <img className="rounded w-16" src={item.image} alt="" />
+                    <img className="rounded w-16 h-10v" src={item.image} alt="" />
                     <small>{item.name}</small>
                     </div>
                     <div>
@@ -67,7 +67,7 @@ const Sidebar = () => {
                   to="/cart"
                   className="text-white no-underline text-2sm"
                 >
-                  go to cart
+                  View Cart
                 </Link>
               </button>
             </div>
