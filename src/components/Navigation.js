@@ -27,7 +27,7 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg fixed-top shadow-xl"
+        className="navbar navbar-expand-lg fixed-top"
         style={{
           transition: "1s ease",
           backgroundColor: navBackground ? "#fff" : "transparent",
@@ -35,7 +35,7 @@ const Navigation = () => {
       >
         <div className="container-fluid">
           <Link className=" no-underline text-black" to="/">
-            <img className="w-36" src={logo} alt="" />
+            <img className="w-36 text-white" src={logo} alt="" />
           </Link>
           <button
             className="navbar-toggler"
@@ -49,7 +49,7 @@ const Navigation = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
                   Home
@@ -67,7 +67,7 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle mr-20"
                   to="/"
                   id="navbarDropdownMenuLink"
                   role="button"

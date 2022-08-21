@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
 import Delivery from '../components/Delivery'
 import Products from '../components/Products'
 import Cto from '../components/Cto'
@@ -12,7 +11,6 @@ import Hero from '../components/Hero'
 const Home = () => {
   return (
     <>
-        <Navigation />
         <Hero />
 
         <Delivery />

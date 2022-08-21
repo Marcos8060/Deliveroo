@@ -22,14 +22,14 @@ const Sidebar = () => {
         ) : (
           <>
             <GiShoppingBag
-              className="cursor-pointer w-32 text-2xl"
+              className="cursor-pointer w-32 text-2xl mt-2"
               onClick={() => setShowSidebar(!showSidebar)}
             />
           </>
         )}
 
         <div
-          className={`top-0 right-0 md:w-[24vw] w-[70vw] bg-white p-4 pl-20 mt-16 text-white fixed h-full z-40 ${
+          className={`top-0 right-0 md:w-[24vw] w-[70vw] bg-grey rounded p-4 pl-20 mt-16 text-white fixed h-full z-40 ${
             showSidebar ? "translate-x-0 " : "translate-x-full"
           }`}
         >
