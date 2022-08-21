@@ -1,5 +1,7 @@
 import React from 'react'
 import { ImQuotesLeft } from 'react-icons/im'
+import { ImQuotesRight } from 'react-icons/im'
+
 
 // OWL CAROUSEL
 import OwlCarousel from 'react-owl-carousel';
@@ -41,31 +43,31 @@ const Testimonial = () => {
 
         <OwlCarousel {...options}>
 
-            <div className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+            <div className='w-10/12 mx-auto bg-grey text-black p-10 rounded-2xl item mt-8'>
                 <ImQuotesLeft/>
-                <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                <ImQuotesLeft className='ml-auto'/>
+                <p className='text-center text-2xsm font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
+                <ImQuotesRight className='ml-auto'/>
                 <small className='text-2sm font-thin text-yellow'>Jared Oyugi.</small>
             </div>
 
-            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+            <div  className='w-10/12 mx-auto bg-grey text-black p-10 rounded-2xl item mt-8'>
                 <ImQuotesLeft/>
                 <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                <ImQuotesLeft className='ml-auto'/>
+                <ImQuotesRight className='ml-auto'/>
                 <small className='text-2sm font-thin text-yellow'>Ann Kaboyo.</small>
             </div>
 
-            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+            <div  className='w-10/12 mx-auto bg-grey text-black p-10 rounded-2xl item mt-8'>
                 <ImQuotesLeft/>
                 <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                <ImQuotesLeft className='ml-auto'/>
+                <ImQuotesRight className='ml-auto'/>
                 <small className='text-2sm font-thin text-yellow'>Randy Wilson.</small>
             </div>
 
-            <div  className='w-10/12 mx-auto bg-black text-white p-10 rounded-2xl item mt-8'>
+            <div  className='w-10/12 mx-auto bg-grey text-black p-10 rounded-2xl item mt-8'>
                 <ImQuotesLeft/>
                 <p className='text-center font-thin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam deleniti quam dicta consequuntur.</p>
-                <ImQuotesLeft className='ml-auto'/>
+                <ImQuotesRight className='ml-auto'/>
                 <small className='text-2sm font-thin text-yellow'>Ritah Anyango.</small>
             </div>
 
