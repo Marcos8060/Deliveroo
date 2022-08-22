@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
             <button className="bg-yellow text-white p-2 uppercase">Order Now</button>
           </div>
-          <div className="md:w-1/2 w-full p-2 bg-yellow rounded-bl-3xl flex items-center overflow-hidden">
+          <div className="md:w-1/2 w-full p-2 bg-yellow md:rounded-bl-3xl flex items-center overflow-hidden">
             <img className="h-90v mt-12" src={burger} alt="burger" />
             <img className="h-40v my-40" src={burger1} alt="burger" />
           </div>
