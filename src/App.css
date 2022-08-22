@@ -58,3 +58,7 @@
   background: #F8F8F8;
   border-radius: 10px;
 }
+.navbar-toggler:focus{
+  border: none;
+  box-shadow: 0;
+}

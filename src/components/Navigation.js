@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+import { BiMenuAltLeft } from "react-icons/bi";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 import logo from "../assets/Images/logo.png";
 import Sidebar from "./Sidebar";
+
 
 const Navigation = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -46,7 +47,8 @@ const Navigation = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <BiMenuAltLeft className="navbar-toggler-icon"/>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ml-auto">
