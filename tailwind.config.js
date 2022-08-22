@@ -15,7 +15,9 @@ module.exports = {
       category: "#F2EFE6",
       black: "#282932",
       gray: "#8D9CA4",
-      grey: "#F8F8F8"
+      grey: "#F8F8F8",
+      green: "#5B7017",
+      unknown: "#E5EFE9"
     },
     height: {
 			"10v": "10vh",

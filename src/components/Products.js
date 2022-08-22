@@ -27,13 +27,17 @@ const Products = () => {
         Popular Goods
       </h1>
 
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 pl-4">
         {data.map((item) =>(
-          <div className="item" key={item.id}>
+          <div className="item m-2 shadow-md" key={item.id}>
             <img src={item.image} alt="" />
             <div className="text-center">
               <p>{item.name}</p>
-              <small>{item.description}</small>
+              <small className="text-2sm">{item.description.substring(0, 70)}{item.description.length >= 70 && '...'}</small>
+              <div className="flex items-center justify-around">
+                <span className="font-bold">ksh {item.price}</span>
+                <GiShoppingBag className="text-green bg-unknown p-2 rounded text-4xl"/>
+              </div>
             </div>
           </div>
         ))}
