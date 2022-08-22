@@ -27,16 +27,13 @@ const Products = () => {
         Popular Goods
       </h1>
 
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-2 px-2">
-        {data.map((item) => (
-          <div>
-            <div className="bg-white hover:shadow-2xl">
-              <img className="md:h-40v h-20v w-full rounded" src={item.image} alt="" />
-              <div className="info flex items-center justify-between">
-                <small>{item.name}</small>
-                <BsPlusCircle />
-                <GiShoppingBag />
-              </div>
+      <div className="grid grid-cols-4 gap-3">
+        {data.map((item) =>(
+          <div className="item" key={item.id}>
+            <img src={item.image} alt="" />
+            <div className="text-center">
+              <p>{item.name}</p>
+              <small>{item.description}</small>
             </div>
           </div>
         ))}

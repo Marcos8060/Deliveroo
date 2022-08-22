@@ -53,3 +53,8 @@
   border-bottom-right-radius: 2px;
   padding: 9px;
 }
+
+.item{
+  background: #F8F8F8;
+  border-radius: 10px;
+}
