@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="bg-white h-100v">
         <Navigation />
         <div className="md:flex items-center justify-between">
-          <div className="hidden md:block md:w-1/2 w-full mx-auto p-2 mt-20">
-            <h1 className="mt-40v">
-              We make the double <br /> Cheesy Burger
+          <div className="hidden md:block md:w-1/2 w-full mx-auto pl-10 mt-10">
+            <h1 className="mt-40v text-6xl font-black">
+              The Double <br /> Decker
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
