@@ -4,6 +4,7 @@ import axios from "axios";
 import { products } from "../axios";
 import { Link } from "react-router-dom";
 import { GiShoppingBag } from "react-icons/gi";
+import { FiEye } from 'react-icons/fi'
 
 
 const Products = () => {
@@ -27,15 +28,16 @@ const Products = () => {
         Popular Goods
       </h1>
 
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 pl-4">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 p-2">
         {data.map((item) =>(
-          <div className="item m-2 shadow-md" key={item.id}>
+          <div className="item p-2 shadow-md" key={item.id}>
             <img src={item.image} alt="" />
             <div className="text-center">
-              <p>{item.name}</p>
-              <small className="text-2sm">{item.description.substring(0, 70)}{item.description.length >= 70 && '...'}</small>
+              <p className="font-bold uppercase">{item.name}</p>
+              <small className="text-xs">{item.description.substring(0, 70)}{item.description.length >= 70 && '...'}</small>
               <div className="flex items-center justify-around">
-                <span className="font-bold">ksh {item.price}</span>
+                <span className="font-bold">${item.price}</span>
+                <FiEye className="text-green bg-unknown p-2 rounded text-4xl"/>
                 <GiShoppingBag className="text-green bg-unknown p-2 rounded text-4xl"/>
               </div>
             </div>
