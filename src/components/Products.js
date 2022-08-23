@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { BsPlusCircle } from "react-icons/bs";
 import axios from "axios";
 import { products } from "../axios";
 import { Link } from "react-router-dom";
 import { GiShoppingBag } from "react-icons/gi";
 import { FiEye } from 'react-icons/fi'
-
+import { useDispatch } from 'react-redux'
+import { addToCart } from "../redux/features/cart/cartSlice";
 
 const Products = () => {
   const [data, setData] = useState([]);
-  
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     axios
@@ -41,7 +42,7 @@ const Products = () => {
                 <Link to={`detail/${item.id}`}>
                   <FiEye className="text-green bg-unknown p-2 rounded text-4xl"/>
                 </Link>
-                <GiShoppingBag className="text-green bg-unknown p-2 rounded text-4xl"/>
+                <GiShoppingBag onClick={()=> dispatch(addToCart(item))} className="text-green bg-unknown p-2 rounded text-4xl"/>
               </div>
             </div>
           </div>
