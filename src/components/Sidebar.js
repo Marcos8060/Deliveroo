@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { GiShoppingBag } from "react-icons/gi";
-import burger from "../assets/Images/burger8.jpeg";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -8,6 +7,8 @@ const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const cartItems = useSelector((store) => store);
+
+  const { quantity } = useSelector((store) => store)
 
   return (
     <>
@@ -21,6 +22,7 @@ const Sidebar = () => {
           </button>
         ) : (
           <>
+          <span className="-mr-20 -mt-1 font-bold text-2xl">{quantity}</span>
             <GiShoppingBag
               className="cursor-pointer w-32 text-2xl mt-2"
               onClick={() => setShowSidebar(!showSidebar)}

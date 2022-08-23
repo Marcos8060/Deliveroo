@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { BiMenu } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
-import { BsFillPersonCheckFill } from "react-icons/bs";
 import logo from "../assets/Images/logo.png";
 import Sidebar from "./Sidebar";
 
