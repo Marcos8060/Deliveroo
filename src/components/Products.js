@@ -9,6 +9,7 @@ import { FiEye } from 'react-icons/fi'
 
 const Products = () => {
   const [data, setData] = useState([]);
+  
 
   useEffect(() => {
     axios
@@ -37,7 +38,9 @@ const Products = () => {
               <small className="text-xs">{item.description.substring(0, 70)}{item.description.length >= 70 && '...'}</small>
               <div className="flex items-center justify-around">
                 <span className="font-bold">${item.price}</span>
-                <FiEye className="text-green bg-unknown p-2 rounded text-4xl"/>
+                <Link to={`detail/${item.id}`}>
+                  <FiEye className="text-green bg-unknown p-2 rounded text-4xl"/>
+                </Link>
                 <GiShoppingBag className="text-green bg-unknown p-2 rounded text-4xl"/>
               </div>
             </div>
