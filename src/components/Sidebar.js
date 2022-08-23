@@ -46,7 +46,7 @@ const Sidebar = () => {
              <>
                 <div className="flex items-center justify-between">
                     <div>
-                    <img className="rounded w-16 h-10v" src={item.image} alt="" />
+                    <img className="rounded w-16 h-8v" src={item.image} alt="" />
                     <small>{item.name}</small>
                     </div>
                     <div>
