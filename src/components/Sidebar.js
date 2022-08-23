@@ -6,9 +6,9 @@ import { useSelector } from "react-redux";
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
-  const cartItems = useSelector((store) => store);
+  const {cartItems} = useSelector((store) => store);
 
-  const { quantity } = useSelector((store) => store)
+  // const { quantity } = useSelector((store) => store)
 
   return (
     <>
@@ -22,7 +22,7 @@ const Sidebar = () => {
           </button>
         ) : (
           <>
-          <span className="-mr-20 -mt-1 font-bold text-2xl">{quantity}</span>
+          <span className="-mr-20 -mt-1 font-bold text-2xl">{cartItems.length}</span>
             <GiShoppingBag
               className="cursor-pointer w-32 text-2xl mt-2"
               onClick={() => setShowSidebar(!showSidebar)}
@@ -42,7 +42,7 @@ const Sidebar = () => {
                 <small>Price</small>
             </div>
             <hr />
-            {cartItems.cartItems.map((item) => (
+            {cartItems.map((item) => (
              <>
                 <div className="flex items-center justify-between">
                     <div>
