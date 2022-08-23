@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import CartReducer from './features/cart/cartSlice'
+import ModalReducer from './features/modal/ModalSlice'
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from 'redux-persist';
 import thunk from 'redux-thunk';
@@ -10,7 +11,7 @@ const persistConfig = {
   storage,
 }
 
-const persistedReducer = persistReducer(persistConfig, CartReducer)
+const persistedReducer = persistReducer(persistConfig, CartReducer, ModalReducer)
 
 
 
