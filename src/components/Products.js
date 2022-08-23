@@ -42,7 +42,7 @@ const Products = () => {
                 <Link to={`detail/${item.id}`}>
                   <FiEye className="text-green bg-unknown p-2 rounded text-4xl"/>
                 </Link>
-                <GiShoppingBag onClick={()=> dispatch(addToCart(item))} className="text-green bg-unknown p-2 rounded text-4xl"/>
+                <GiShoppingBag onClick={()=> dispatch(addToCart(item))} className="text-green cursor-pointer bg-unknown p-2 rounded text-4xl"/>
               </div>
             </div>
           </div>
