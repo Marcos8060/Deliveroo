@@ -28,3 +28,11 @@ const login = (username,password) =>{
 const logout = ()=>{
     localStorage.removeItem("user")
 }
+
+const authService = {
+    register,
+    login,
+    logout
+}
+
+export default authService;
