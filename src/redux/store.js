@@ -4,6 +4,8 @@ import ModalReducer from './features/modal/modalSlice'
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from 'redux-persist';
 import thunk from 'redux-thunk';
+import authReducer from './features/auth/authSlice'
+import messageReducer from './features/message/messageSlice'
 
 
 const persistConfig = {
@@ -11,8 +13,15 @@ const persistConfig = {
   storage,
 }
 
+const reducer = {
+  cart : CartReducer,
+  modal: ModalReducer,
+  auth: authReducer,
+  message: messageReducer
+}
 
-const persistedReducer = persistReducer(persistConfig, CartReducer, ModalReducer)
+
+const persistedReducer = persistReducer(persistConfig, reducer)
 
 
 
