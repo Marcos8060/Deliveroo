@@ -56,6 +56,7 @@ const Register = () => {
     .unwrap()
     .then((res) =>{
         setSuccessfull(true);
+        history('/login')
     })
     .catch((err) =>{
         setSuccessfull(false);

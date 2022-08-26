@@ -11,6 +11,7 @@ import { store,persistor } from './redux/store';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Login } from './Pages/Login'
 
 
 
@@ -24,6 +25,7 @@ root.render(
           <Route exact path="/" element={<App />}></Route>
           <Route exact path="/cart" element={<Cart />}></Route>
           <Route exact path="/register" element={<Register />}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/detail/:id/" element={<Detail />}></Route>
         </Routes>
       </ PersistGate>
