@@ -21,7 +21,7 @@ const reducer = {
 }
 
 
-const persistedReducer = persistReducer(persistConfig, reducer)
+const persistedReducer = persistReducer(persistConfig, reducer.cart,reducer.auth,reducer.message,reducer.modal)
 
 
 

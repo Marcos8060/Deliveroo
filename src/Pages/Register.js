@@ -2,10 +2,12 @@ import React,{useState} from 'react'
 import Footer from '../components/Footer'
 import { register } from '../axios'
 import axios from 'axios'
+import { useSelector,useDispatch } from 'react-redux'
+import { clearMessage } from '../redux/features/message/messageSlice'
 
 
 const Register = () => {
-
+    const dispatch = useDispatch();
     const [formData,setFormData] = useState({
         username:'',
         email: '',
