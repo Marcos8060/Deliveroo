@@ -10,7 +10,7 @@ const messageSlice = createSlice({
         setMessage:(state,action)=>{
             return { message: action.payload }
         },
-        clearMessage:(state,action)=>{
+        clearMessage:()=>{
             return { message : ''}
         }
     }
