@@ -1,23 +1,23 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Profile = () => {
-    const history = useNavigate();
-    const { user: currentUser} = useSelector((state)=> state.auth || {});
+  const history = useNavigate();
+  const { user: currentUser } = useSelector((state) => state.auth);
 
-    if(!currentUser){
-        return history('/login')
-    }
+  if (!currentUser) {
+    return history("/login");
+  }
   return (
     <div className="container">
-        <header className="jumbotron">
-            <h3>
-                <strong>{currentUser?.username}</strong>Profile
-            </h3>
-        </header>
+      <header className="">
+        <h3>
+          <strong>{currentUser?.username}</strong>Profile
+        </h3>
+      </header>
 
-        <p>
+      <p>
         <strong>Token:</strong> {currentUser?.accessToken.substring(0, 20)} ...{" "}
         {currentUser?.accessToken.substr(currentUser?.accessToken.length - 20)}
       </p>
@@ -30,7 +30,7 @@ const Profile = () => {
         <strong>Email:</strong> {currentUser?.email}
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

@@ -3,8 +3,8 @@ const API_URL = 'http://localhost:8000/api/';
 
 
 // register function
-const register = (username,email,password)=>{
-        return axios.post(API_URL + 'register/', {
+const register = async(username,email,password)=>{
+        return await axios.post(API_URL + 'register/', {
             username,
             email,
             password
@@ -13,18 +13,14 @@ const register = (username,email,password)=>{
 
 // login function
 const login = async(username,password) =>{
-    return await axios.post(API_URL + 'token/',{
+    const res =  await axios.post(API_URL + 'token/',{
         username,
         password
     })
-    .then((res) =>{
-        if(res.data.access_token){
-            localStorage.setItem("user", JSON.stringify(res.data))
-        }
-    })
-    .catch((err) =>{
-        console.log(err);
-    })
+    if(res.status === 200){
+        return res.data;
+    }
+    return null;
 }
 
 // logout function
