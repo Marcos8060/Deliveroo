@@ -22,6 +22,9 @@ const login = async(username,password) =>{
             localStorage.setItem("user", JSON.stringify(res.data))
         }
     })
+    .catch((err) =>{
+        console.log(err);
+    })
 }
 
 // logout function

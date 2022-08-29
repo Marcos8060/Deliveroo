@@ -11,7 +11,7 @@ const Register = () => {
   const dispatch = useDispatch();
   const history = useNavigate();
   const [successful, setSuccessful] = useState(false);
-  // const { message } = useSelector((state) => state.message);
+  const { message } = useSelector((state) => state.message || {});
 
   useEffect(() => {
     dispatch(clearMessage());
@@ -115,6 +115,16 @@ const Register = () => {
             </Form>
           </Formik>
         </div>
+        {message && (
+        <div className="form-group">
+          <div
+            className={successful ? "alert alert-success" : "alert alert-danger"}
+            role="alert"
+          >
+            {message}
+          </div>
+        </div>
+      )}
       </div>
       <Footer />
     </>

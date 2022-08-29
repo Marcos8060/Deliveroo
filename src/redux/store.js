@@ -25,7 +25,7 @@ const persistedReducer = persistReducer(persistConfig, reducer.cart,reducer.auth
 
 
 
-export const store = configureStore({
+const store = configureStore({
   reducer: persistedReducer,
   devTools: process.env.NODE_ENV !== 'production',
   middleware: [thunk]
@@ -34,6 +34,8 @@ export const store = configureStore({
 console.log(store.getState())
 
 export const persistor = persistStore(store)
+
+export default store;
 
 
 

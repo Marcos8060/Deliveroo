@@ -31,10 +31,10 @@ export const register = createAsyncThunk(
 
 // login async thunk
 export const login = createAsyncThunk(
-    "token/",
+    "api/token/",
     async({ username, password}, thunkAPI) =>{
         try {
-            const data = await authService.login({ username,password});
+            const data = await authService.login(username,password);
             return { user: data };
         } catch (error) {
             const message = 
